@@ -66,6 +66,13 @@
     font-family:verdana;
     font-size:11px;
 }
+.error {
+    color: red
+}
+.success {
+    color: blue;
+    font-weight:bold;
+}
 .actionBox {
     border-top:1px dotted #bbb;
     padding:10px;

@@ -159,7 +159,13 @@ img::-moz-selection {
     border-top:1px dotted #bbb;
     padding:10px;
 }
-
+.error {
+    color: red
+}
+.success {
+    color: blue;
+    font-weight:bold;
+}
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
