@@ -27,16 +27,19 @@
 
 
         <div class="col-lg-8 col-md-10 mx-auto content">
-            {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% if messages %}
-                    <div class=flashes>
-                        {% for category, message in messages %}
-                        <span class="{{ category }}">{{ message }}</span>
-                        {% endfor %}
-                    </div>
+<!--            {% with messages = get_flashed_messages() %}-->
+<!--                    {% if messages %}-->
+<!--                    <div class=flashes>-->
+<!--                        {% for message in messages %}-->
+<!--                        <p>{{ message }}</p>-->
+<!--                        {% endfor %}-->
+<!--                    </div>-->
 
-                    {% endif %}
-                    {% endwith %}
+<!--                    {% endif %}-->
+<!--                    {% endwith %}-->
+            {% with messages = get_flashed_messages() %}
+            <p>{{messages[0]}}</p>
+            {% endwith  %}
             {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
         </div>
     </div>
